@@ -1,0 +1,496 @@
+/* HERO */
+#hero{
+    background-color: var(--bg-main);
+    font-family: var(--font-body);
+    color: var(--text-main);
+    min-height: 100svh;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+#hero a{
+    text-decoration: none;
+}
+.hero__logo{
+    grid-column: 1/7;
+    grid-row: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: clamp(0.1rem, 2vw, 0.2rem);
+    right:2rem;
+}
+.hero__logo h2{
+    font-size: clamp(1rem, 2vw, 1.7rem);
+    color: var(--primary);
+    font-family: var( --font-heading);
+}
+.hero__logo h2 span{
+    color: var(--blue-secondary);
+}
+.hero__logo img{
+    width: clamp(2.2rem, 4vw, 3.5rem);
+    height: auto;
+}
+.hero__eyebrow{
+    display: flex;
+    align-self:start;
+    color: var(--primary);
+    justify-content: center;
+}
+.hero__eyebrow p{
+    font-size: var(--fs-label);
+}
+.hero__impact img{
+    width: clamp(1rem,5vw,1.5rem);
+    height: auto;
+    border-radius: 50%;
+}
+.hero__main-text{
+    grid-column:1/3 ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: clamp(20rem, 55vw, 45rem);
+    
+}
+.hero__main-text #judulToTop{
+    font-size: var(--fs-hero-title);
+    line-height: clamp(1.1, 1.3vw, 1.2);
+    font-weight: 800;
+    font-family: var(--font-heading);
+    max-width: 45rem;
+}
+.hero__main-text span{
+    color:var(--primary);
+}
+.hero__main-text p{
+    font-size: var(--fs-body-lg);
+    max-width: 30rem;
+    line-height: clamp(1.65, 2vw, 1.75);
+    font-weight: 400;
+    margin-bottom:0.1rem;
+}
+/* #hero__paragraf-main{
+    animation: fadeUp 0.8s ease-in-out;
+} */
+.hero__main-text .hero__flex-btn{
+    display: flex;
+    gap: clamp(0.6rem, 1vw, 1rem);
+    margin-bottom:0.2rem;
+    width: 100%;
+    justify-content: flex-start;
+}
+.hero__main-text button{
+    width: clamp(10rem, 20vw, 20rem);
+    height: clamp(3rem, 5vw, 3.6rem);
+    border-radius: 0.1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0.35rem 0.8rem rgba(0,0,0,0.1), 0 0.1rem 0.25rem rgba(0,0,0,.03);
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: var(--fs-body-lg);
+    font-family: var(--font-heading);
+}
+.hero__main-text button h2{
+    font-size:clamp(0.8rem, 2vw, 1rem);
+}
+.hero__main-text button:hover{
+    transform: translateY(-0.15rem);
+    box-shadow:0 .7rem 1.4rem rgba(0,0,0,.12), 0 .25rem .5rem rgba(0,0,0,.08);
+}
+.hero__main-text button:active{
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.08);
+}
+.hero-btn__start{
+    background-color: var(--primary);
+    color: white;
+}
+.hero-btn__see{
+    color:var(--text-main);
+}
+.hero-btn__see h2{
+    font-weight: 500;
+}
+.hero__impact{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+}
+.hero__impact p{
+    font-size: clamp(0.9rem, 1vw, 1rem);
+}
+.hero__impact span{
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.judul__card-bottom-left i{
+    font-size: var(--fs-ikon-sm);
+    color: var(--primary);
+}
+.judul__card-bottom-left h5{
+    font-size: var(--fs-body-md);
+}
+.day-illustrasi__card-bottom-left p{
+    font-size: var(--fs-body-sm);
+    width: clamp(0.5rem,10vw,1rem);
+    height: clamp(0.5rem,10vw,1rem);
+    padding: 0.3rem;
+    background-color: rgba(160, 158, 158, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    color: var(--text-muted);
+}
+.judul__day-progres h4{
+    font-size: var(--fs-body-md);
+}
+.judul__day-progres p{
+    font-size: var(--fs-label);
+}
+.container-progres__card-hero p{
+    font-size: var(--fs-body-sm);
+}
+.day-illustrasi__card-bottom-left #four-primary{
+    background-color: var(--primary);
+    color: white;
+    padding: 0.6rem;
+}
+.judul__card-bottom-rigth i{
+    color: var(--primary);
+    font-size: var(--fs-ikon-sm);
+}
+.judul__card-bottom-rigth h5{
+    font-size: var(--fs-body-md);
+}
+.stastistik__card h6{
+    font-size: var(--fs-body-sm);
+}
+.stastistik__card p{
+    font-size: var(--fs-caption);
+}
+.stastistik__card h4{
+    color: var(--primary);
+}
+.stastistik__card h4 span{
+    font-size: var(--fs-caption);
+}
+.container__hero-rigth{
+    grid-column: 3/7;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+}
+.hero__card-bottom-left{
+    position: absolute;
+    top: 22rem;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bg-main);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.142);
+    border-radius: 0.5rem;
+    padding:1rem;
+    width: 12rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 2;
+}
+.judul__card-bottom-left{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.day-illustrasi__card-bottom-left{
+    grid-column: 1/2;
+    display: grid;
+    column-gap: 0.25rem;
+    align-content: center;
+    margin-top: 0.5rem;
+    grid-template-columns: repeat(7,max-content);
+}
+.container__day-progres{
+    grid-column: 1/2;
+}
+.judul__day-progres{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.container-progres__card-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.container-progres__card-hero p{
+    align-self: flex-end;
+}
+.container__progres-bar-hero{
+    width: 9rem;
+    height: 0.4rem;
+    background-color: rgba(34, 197, 94, 0.2);
+    border-radius: 2.5rem;
+}
+.progres-bar-hero{
+    width: 7rem;
+    height: 0.4rem;
+    background-color: rgba(34, 197, 94, 1);
+    border-radius: 2.5rem;
+}
+.container__card-bottom-rigth{
+    position: absolute;
+    background-color: rgba(248, 250, 252, 1);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    top: 16.5rem;
+    left:15rem;
+    width: 18rem;
+    height: 15rem;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.142);
+}
+.judul__card-bottom-rigth{
+    grid-column: 1/2;
+    display: flex;
+    gap: 0.5rem;
+}
+.stastistik__card-bottom-rigth{
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    column-gap: 2rem;
+    grid-column: 1/2;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+.container__chart-hero{
+    grid-column: 1/2;
+    width: 15rem;
+    height: 10rem;
+}
+
+.swiper-main-hero{
+    width: 100%;
+    height: 100%;
+}
+.swiper-main-hero .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-main-hero .swiper-slide{
+    border-radius: 3rem 4rem 6rem 3rem;
+    /* display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto; */
+    object-fit: contain;
+    height: 25rem;
+    width: 100%;
+}
+.swiper-main-hero .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6rem 3rem 6rem 3rem;
+}
+.label__img h5{
+    font-size: var(--fs-body-sm);
+}
+.label__img p{
+    font-size: var(--fs-label);
+}
+.label__img i{
+    font-size: var(--fs-ikon-md);
+    color: var(--primary);
+}
+.label__img{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(50px);
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 2;
+}
+@media (max-width: 72rem){
+#hero{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding-top: 5rem;
+    min-height: auto;
+}
+.hero__main-text{
+    grid-column: 1/2;
+    width: 100%;
+    max-width: 42rem;
+}
+.hero__main-text p{
+    max-width: 38rem;
+}
+.container__hero-rigth{
+    grid-column: 1/2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 14rem;
+}
+
+/* SWIPER */
+.swiper{
+    width: 100%;
+}
+
+.swiper-slide{
+    width: 100%;
+}
+
+.swiper-slide img{
+    height: 32rem;
+    object-fit: cover;
+}
+
+/* FLOATING CARD */
+.hero__card-bottom-left{
+    width: 13rem;
+    height: auto;
+    left: 1rem;
+    top: auto;
+    bottom: 2rem;
+}
+
+.container__card-bottom-rigth{
+    width: 19rem;
+    height: auto;
+    top: auto;
+    bottom: -1rem;
+    left: auto;
+    right: 1rem;
+}
+.container__chart-hero{
+    width: 100%;
+    height: 9rem;
+}
+.stastistik__card-bottom-rigth{
+    column-gap: 1rem;
+}
+}
+@media (max-width: 48rem){
+
+#hero{
+    padding:5rem 1.2rem 2rem 1.2rem;
+}
+.hero__logo{
+    right: 1rem;
+}
+.hero__main-text{
+    width: 100%;
+    gap: 1rem;
+}
+.hero__main-text #judulToTop{
+    max-width: 100%;
+}
+.hero__main-text p{
+    max-width: 100%;
+}
+.hero__main-text .hero__flex-btn{
+    flex-direction: column;
+    width: 100%;
+}
+.hero__main-text button{
+    width: 100%;
+    max-width: 100%;
+}
+.hero__impact{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.container__hero-rigth{
+    padding-bottom: 20rem;
+}
+.swiper{
+    width: 100%;
+}
+.swiper-slide img{
+    height: 24rem;
+    border-radius:2rem 2rem 5rem 2rem;
+}
+.label__img{
+    left: 1rem;
+    top: 1rem;
+    padding:0.6rem 0.9rem;
+}
+.hero__card-bottom-left{
+    width: 11rem;
+    left: 0;
+    bottom: 6rem;
+    padding: 0.8rem;
+}
+.container__card-bottom-rigth{
+    width: 15rem;
+    right: 0;
+    bottom: -1rem;
+    padding: 0.8rem;
+}
+
+.container__chart-hero{
+    height: 7rem;
+}
+.stastistik__card-bottom-rigth{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0.5rem;
+}
+}
+@media (max-width: 30rem){
+#hero{
+    padding:5rem 1rem 2rem 1rem;
+}
+.swiper-slide img{
+    height: 20rem;
+}
+.hero__card-bottom-left{
+    position: relative;
+    width: 100%;
+    left: auto;
+    bottom: auto;
+    top: -2rem;
+    margin-bottom: 1rem;
+}
+.container__card-bottom-rigth{
+    position: relative;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    top: -1rem;
+}
+.container__hero-rigth{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+}
